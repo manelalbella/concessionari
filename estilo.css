@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("fondo_audi.png"); /* Reemplaza "fondo.jpg" con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente */
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f2f2;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff6600; /* Cambia el color al pasar el ratón por encima */
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.modelo {
+    width: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(250, 248, 248, 0.5); /* Efecto sombra */
+    transition: transform 0.3s ease-in-out;
+}
+
+.modelo:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón por encima */
+}
+
+.modelo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+p {
+    color: white;
+}
+
+.esquina {
+    position: absolute;
+    width: 200px; /* Aumenté el ancho */
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.esquina img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#esquina-superior-izquierda { top: 0; left: 0; }
+#esquina-superior-derecha { top: 0; right: 0; }
+#esquina-inferior-izquierda { bottom: 0; left: 0; }
+#esquina-inferior-derecha { bottom: 0; right: 0; }
+
+p {
+    color: white;
+}
+
+.esquina-superior-izquierda { bottom: 10; left: 0; }
+.esquina-superior-derecha { top: 5; right: 0; }
+.esquina-inferior-izquierda { bottom: 0; left: 0; }
+.esquina-inferior-derecha { bottom: 0; right: 0; }
